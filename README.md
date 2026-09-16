@@ -8,7 +8,7 @@
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF.svg )](https://github.com/features/actions )
 
 ## 🌟 Live Deployment Links
-* **Live Web Dashboard:** [View Streamlit Application](https://omnimodal-whatsapp-agent-3pjibcpz748vhpndaceeqv.streamlit.app/ )
+### 🚀 Live Application: [Experience HextGen Agent Here](https://omnimodal-whatsapp-agent-geabhghisncbcz78xkloet.streamlit.app/ )
 * **Docker Image:** `docker pull ghcr.io/munnurumahesh03-coder/omnimodal-whatsapp-agent:latest`
 
 ## 📖 Overview
