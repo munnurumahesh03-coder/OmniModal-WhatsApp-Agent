@@ -222,10 +222,37 @@ def run_playwright_agent():
             last_processed_messages = {group: None for group in TARGET_GROUPS}
             first_run = {group: True for group in TARGET_GROUPS} 
             
-            print("✅ Starting 5-Group Patrol...")
+            # Keep track of known groups to detect changes
+
+            current_known_groups = set(TARGET_GROUPS)
+            
+            print("✅ Starting Dynamic Patrol...")
             
             # --- CONTINUOUS PATROL LOOP ---
             while True:
+                # 1. Fetch the freshest list from MongoDB EVERY cycle!
+                config = db["settings"].find_one({"type": "bot_config"})
+                TARGET_GROUPS = config.get("groups", []) if config else []
+
+                # 🚨 DETECT ADDED OR DELETED GROUPS 🚨
+                new_set = set(TARGET_GROUPS)
+                added_groups = new_set - current_known_groups
+                removed_groups = current_known_groups - new_set
+                
+                for g in added_groups:
+                    print(f"\n🟢 ALERT: New group added from Dashboard -> {g}")
+                for g in removed_groups:
+                    print(f"\n🔴 ALERT: Group removed from Dashboard -> {g}")
+                    
+                current_known_groups = new_set # Update our tracker
+                
+                # 2. Make memory space for any brand new groups added from the website
+                for g in TARGET_GROUPS:
+                    if g not in last_processed_messages:
+                        last_processed_messages[g] = None
+                        first_run[g] = True
+
+                # 3. Now patrol the updated list
                 for group_name in TARGET_GROUPS:
                     try:
                         print(f"\n🔍 Checking group: {group_name}...")
