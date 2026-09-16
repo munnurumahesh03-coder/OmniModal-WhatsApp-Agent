@@ -8,8 +8,13 @@
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF.svg )](https://github.com/features/actions )
 
 ## 🌟 Live Deployment Links
+
 ### 🚀 Live Application: [Experience HextGen Agent Here](https://omnimodal-whatsapp-agent-geabhghisncbcz78xkloet.streamlit.app/ )
-* **Docker Image:** `docker pull ghcr.io/munnurumahesh03-coder/omnimodal-whatsapp-agent:latest`
+
+- **Docker Image:**
+  ```bash
+  docker pull ghcr.io/munnurumahesh03-coder/omnimodal-whatsapp-agent:latest
+
 
 ## 📖 Overview
 This project is an advanced **Omni-Modal Robotic Process Automation (RPA) Pipeline**. It utilizes a Playwright browser to continuously monitor multiple WhatsApp groups, dynamically extracting unstructured hospital onboarding data from any file format (Text, PDFs, CSVs, and Images). 
