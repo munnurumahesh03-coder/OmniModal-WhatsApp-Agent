@@ -7,13 +7,19 @@
 [![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED.svg )](https://www.docker.com/ )
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF.svg )](https://github.com/features/actions )
 
-## 🌟 Live Deployment Links
+<h2>Live Deployment</h2>
 
-### 🚀 Live Application: [Experience HextGen Agent Here](https://omnimodal-whatsapp-agent-geabhghisncbcz78xkloet.streamlit.app/ )
+<p>
+  <a href="https://omnimodal-whatsapp-agent-geabhghisncbcz78xkloet.streamlit.app" target="_blank">
+    🚀 Open HextGen Omni-Modal Onboarding Agent
+  </a>
+</p>
 
-- **Docker Image:**
-  ```bash
-  docker pull ghcr.io/munnurumahesh03-coder/omnimodal-whatsapp-agent:latest
+<h3>Docker Image</h3>
+
+<pre><code>docker pull ghcr.io/munnurumahesh03-coder/omnimodal-whatsapp-agent:latest</code></pre>
+
+
 
 
 ## 📖 Overview
