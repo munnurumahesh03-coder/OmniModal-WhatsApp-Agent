@@ -10,7 +10,7 @@
 <h2>Live Deployment</h2>
 
 <p>
-  <a href="https://omnimodal-whatsapp-agent-geabhghisncbcz78xkloet.streamlit.app" target="_blank">
+  <a href="https://omnimodal-whatsapp-agent-geabhghisncbcz78xkloet.streamlit.app/#hext-gen-omni-modal-onboarding-system">
     🚀 Open HextGen Omni-Modal Onboarding Agent
   </a>
 </p>
@@ -18,8 +18,6 @@
 <h3>Docker Image</h3>
 
 <pre><code>docker pull ghcr.io/munnurumahesh03-coder/omnimodal-whatsapp-agent:latest</code></pre>
-
-
 
 
 ## 📖 Overview
